@@ -166,6 +166,9 @@ function checkscore(answers) {
                        transform: translateY(0);
                    }
                }
+              .space-for-fucking-iphone {
+                height: 50px;
+              }
            </style>
        </head>
        <body>
@@ -179,6 +182,7 @@ function checkscore(answers) {
                <p class="feedback ${feedback5.includes("That\'s right!") ? 'correct' : feedback5.includes('Sorry') ? 'incorrect' : 'no-answer'}">5: ${feedback5}</p>
                
                <a href="#" class="close-btn" onClick="window.close();">Close this Window</a>
+               <div class="space-for-fucking-iphone"></>
            </div>
        </body>
    </html>
