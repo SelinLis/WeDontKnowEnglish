@@ -291,6 +291,7 @@ function checkscore(answers) {
   //add the week's topic/title here
   title = "<br /><b>Here are your results:</b>";
   // Get the screen width and height to center the popup
+  // Get the screen width and height to make the popup fullscreen
   var screenWidth = window.innerWidth;
   var screenHeight = window.innerHeight;
 
@@ -298,12 +299,8 @@ function checkscore(answers) {
   var popupWidth = screenWidth;
   var popupHeight = screenHeight;
 
-  // Calculate the position of the popup to be centered
-  var leftPos = 0;
-  var topPos = 0;
-
-  // Parameters for pop-up
-  var newWindow = window.open('', 'newwin', `toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,width=${popupWidth},height=${popupHeight},left=${leftPos},top=${topPos}`);
+  // Parameters for pop-up with fullscreen width and height
+  var newWindow = window.open('', 'newwin', `toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,width=${popupWidth},height=${popupHeight},left=0,top=0`);
 
   // Ensure the window is properly loaded before writing content
   if (newWindow) {
@@ -331,9 +328,9 @@ function checkscore(answers) {
                     padding: 20px;
                     border-radius: 12px;
                     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-                    width: 100%;
-                    max-width: 500px;
-                    height: 100%;
+                    width: 90%; /* Adjust the width to fit in the screen */
+                    max-width: 600px; /* Limit max width */
+                    height: 90%; /* Adjust the height to fit in the screen */
                     text-align: center;
                     animation: fadeIn 0.5s ease-out;
                     overflow-y: auto; /* Allow scrolling if the content is too large */
@@ -431,7 +428,3 @@ function checkscore(answers) {
     alert("Popup blocked! Please allow popups for this page.");
   }
 }
-
-
-
-
