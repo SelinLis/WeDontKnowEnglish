@@ -315,14 +315,15 @@ function checkscore(answers) {
             <style>
                 body {
                     font-family: 'Arial', sans-serif;
-                    background: linear-gradient(45deg, #4CAF50, #8BC34A);
-                    color: #fff;
+                    background-color: #ffffff; /* Change the background color to white */
+                    color: #333;
                     margin: 0;
                     padding: 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     height: 100vh;
+                    overflow: hidden; /* Prevent scrolling of the body */
                 }
 
                 .results-container {
@@ -332,6 +333,7 @@ function checkscore(answers) {
                     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
                     width: 100%;
                     max-width: 500px;
+                    height: 100%;
                     text-align: center;
                     animation: fadeIn 0.5s ease-out;
                     overflow-y: auto; /* Allow scrolling if the content is too large */
@@ -428,8 +430,6 @@ function checkscore(answers) {
   } else {
     alert("Popup blocked! Please allow popups for this page.");
   }
-
-
 }
 
 
