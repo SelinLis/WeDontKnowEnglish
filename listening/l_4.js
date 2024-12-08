@@ -351,6 +351,9 @@ function checkscore(answers) {
                        transform: translateY(0);
                    }
                }
+                   .space-for-fucking-iphone {
+                height: 70px;
+              }
            </style>
        </head>
        <body>
@@ -368,7 +371,8 @@ function checkscore(answers) {
                <p class="feedback ${feedback9.includes("That\'s right!") ? 'correct' : feedback9.includes('Sorry') ? 'incorrect' : 'no-answer'}">9: ${feedback9}</p>
                <p class="feedback ${feedback10.includes("That\'s right!") ? 'correct' : feedback10.includes('Sorry') ? 'incorrect' : 'no-answer'}">10: ${feedback10}</p>
                <a href="#" class="close-btn" onClick="window.close();">Close this Window</a>
-           </div>
+            <div class="space-for-fucking-iphone"></>
+               </div>
        </body>
    </html>
  `);
