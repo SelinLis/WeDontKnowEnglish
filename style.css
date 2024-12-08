@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
@@ -28,15 +29,14 @@ a:hover {
     background: #7b0aa3;
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 40px 20px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 
 .title h1 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
-    color: white;
     letter-spacing: 1.5px;
 }
 
@@ -134,20 +134,7 @@ footer {
     border-top: 1px solid #ddd;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, #f4f6fc, #d9e4f1);
-    color: #333;
-    line-height: 1.6;
-}
-
-h1,
-h2 {
-    margin: 0;
-}
-
+/* Links Hover Effects */
 a {
     text-decoration: none;
     color: #7b0aa3;
@@ -159,6 +146,7 @@ a:hover {
     color: #540a85;
 }
 
+/* Header Enhancements */
 header.title {
     background: #7b0aa3;
     color: white;
@@ -174,14 +162,7 @@ header.title h1 {
     letter-spacing: 1.5px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    background: #ffffff;
-    padding: 15
-}
-
+/* Video Section */
 .video-based .image-cont {
     display: flex;
     justify-content: space-between;
